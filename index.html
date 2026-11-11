@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Defence Summit Teaser Styles</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: one column of three style cards, each a preview video over a four-frame strip, then the shared script and open questions. Single dark look (Stratasys digital black). */
+:root{
+  --bg:#000000; --surface:#111416; --line:#262b2f; --fg:#FFFFFF; --muted:#A3ADB5; --accent:#32C8FF; --warn:#FF7846;
+  --display:"Roboto",Arial,sans-serif; --body:"Roboto",Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.5;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-block:48px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:900;letter-spacing:-0.02em;line-height:1.05;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.2rem,5vw,3.6rem)}
+h2{font-size:clamp(1.6rem,3.4vw,2.2rem)}
+h3{font-size:1.15rem;letter-spacing:-0.01em}
+.b{color:var(--accent)}
+.eyebrow{font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+p{margin:0;max-width:65ch}
+.lede{color:var(--muted);font-size:1.1rem}
+header{display:flex;flex-direction:column;gap:16px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 24px;color:var(--muted);font-size:.95rem}
+.facts span b{color:var(--fg);font-weight:500}
+.style{display:flex;flex-direction:column;gap:20px;border-top:1px solid var(--line);padding-top:32px}
+.style-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.tag{font-family:var(--display);font-weight:900;font-size:2.4rem;color:var(--accent);line-height:1}
+video{width:100%;max-width:100%;aspect-ratio:16/9;background:var(--surface);display:block}
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.strip figure{margin:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.strip img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.strip figcaption{font-size:.8rem;color:var(--muted)}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.why div{min-width:0;display:flex;flex-direction:column;gap:4px}
+.why h3{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.why .risk h3{color:var(--warn)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.95rem}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+td.t{font-weight:700;white-space:nowrap}
+td.src{color:var(--muted);font-size:.85rem}
+.flag{color:var(--warn);font-weight:500}
+.ask{background:var(--accent);color:#000;padding:32px;display:flex;flex-direction:column;gap:12px}
+.ask h2{color:#000}
+.ask p{color:#000}
+ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px;max-width:70ch}
+.section{display:flex;flex-direction:column;gap:20px}
+@media (max-width:760px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}.why{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){video{display:none}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Formnext Defence Summit · Booth screen</div>
+    <h1>Three styles. <span class="b">One script.</span> Pick the look.</h1>
+    <p class="lede">These are rough mockups, not the final video. Every style uses the same words and the same five topics, so the only thing to judge is the look and feel. The stills show a title and its proof line together. In the real video they come one after the other, so there are never more than 8 words on screen. Reply with A, B or C, or a mix such as "B hook, A chapters".</p>
+    <div class="facts">
+      <span><b>Final:</b> 60 to 90 s, seamless loop</span>
+      <span><b>Sound:</b> none needed</span>
+      <span><b>Format:</b> 1920×1080 MP4 on USB</span>
+      <span><b>Due:</b> before setup, Tue 17 Nov</span>
+    </div>
+  </header>
+
+  <section class="style" id="style-a">
+    <div class="style-head"><span class="tag">A</span><h2>Grid</h2></div>
+    <p class="lede">Big type on black, with the photo in one block of the brand grid. A bar along the bottom shows which of the five topics is on screen.</p>
+    <video src="vid/A.mp4" autoplay muted loop playsinline poster="img/A1.jpg"></video>
+    <div class="strip">
+      <figure><img src="img/A1.jpg" alt="Style A hook: Mission ready. On demand."><figcaption>Hook</figcaption></figure>
+      <figure><img src="img/A2.jpg" alt="Style A chapter 1, spare parts"><figcaption>01 Spare parts</figcaption></figure>
+      <figure><img src="img/A3.jpg" alt="Style A chapter 5, airworthiness"><figcaption>05 Airworthiness</figcaption></figure>
+      <figure><img src="img/A4.jpg" alt="Style A close with logo"><figcaption>Close</figcaption></figure>
+    </div>
+    <div class="why">
+      <div><h3>Best at</h3><p>Being read from across a busy room. It is the closest to the brand guide.</p></div>
+      <div><h3>Feels</h3><p>Calm, precise, confident.</p></div>
+      <div class="risk"><h3>Risk</h3><p>It is the least cinematic of the three, so it may pull fewer people in from a distance.</p></div>
+    </div>
+  </section>
+
+  <section class="style" id="style-b">
+    <div class="style-head"><span class="tag">B</span><h2>Orbit</h2></div>
+    <p class="lede">Full-screen real footage with titles in the lower left. It opens on the Sierra Space shot of Earth from orbit, then moves to aircraft, drones and printers.</p>
+    <video src="vid/B.mp4" autoplay muted loop playsinline poster="img/B1.jpg"></video>
+    <div class="strip">
+      <figure><img src="img/B1.jpg" alt="Style B hook: From orbit to the front line."><figcaption>Hook</figcaption></figure>
+      <figure><img src="img/B2.jpg" alt="Style B chapter 3, battle damage repair"><figcaption>03 Battle damage repair</figcaption></figure>
+      <figure><img src="img/B3.jpg" alt="Style B chapter 2, drone production"><figcaption>02 Drone production</figcaption></figure>
+      <figure><img src="img/B4.jpg" alt="Style B close with logo"><figcaption>Close</figcaption></figure>
+    </div>
+    <div class="why">
+      <div><h3>Best at</h3><p>Stopping people. It is the most emotional and the most "big screen" of the three.</p></div>
+      <div><h3>Feels</h3><p>Epic and cinematic.</p></div>
+      <div class="risk"><h3>Risk</h3><p>Space is not a summit topic. Reusing Sierra Space footage may need their OK. Text over moving footage is harder to read.</p></div>
+    </div>
+  </section>
+
+  <section class="style" id="style-c">
+    <div class="style-head"><span class="tag">C</span><h2>File to part</h2></div>
+    <p class="lede">Each topic starts as a blue digital drawing, then the real part prints into place. The video itself makes the point of the summit's digital inventory topic.</p>
+    <video src="vid/C.mp4" autoplay muted loop playsinline poster="img/C1.jpg"></video>
+    <div class="strip">
+      <figure><img src="img/C1.jpg" alt="Style C hook: wireframe tail fin beside the real part"><figcaption>Hook</figcaption></figure>
+      <figure><img src="img/C2.jpg" alt="Style C chapter 4, digitalization"><figcaption>04 Digitalization</figcaption></figure>
+      <figure><img src="img/C3.jpg" alt="Style C chapter 5, airworthiness"><figcaption>05 Airworthiness</figcaption></figure>
+      <figure><img src="img/C4.jpg" alt="Style C close with logo"><figcaption>Close</figcaption></figure>
+    </div>
+    <div class="why">
+      <div><h3>Best at</h3><p>Showing what Stratasys does, file in and part out, without a presenter.</p></div>
+      <div><h3>Feels</h3><p>Technical and modern.</p></div>
+      <div class="risk"><h3>Risk</h3><p>The blue drawing effect sits on product photos, so the brand team has to OK it first. It also takes the most production time.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="script">
+    <div class="eyebrow">Same in every style</div>
+    <h2>The script</h2>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Part</th><th>Title card</th><th>Proof line</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td class="t">Hook</td><td>Mission ready. On demand.</td><td>None</td><td class="src">Brief</td></tr>
+          <tr><td class="t">01 Spare parts</td><td>Spare parts, assured.</td><td>US Army depot printed its own UH-60 fin.</td><td class="src">Corpus Christi Army Depot use case</td></tr>
+          <tr><td class="t">02 Drone production</td><td>Drones at scale.</td><td>40% lower production cost vs previous AM.</td><td class="src">Bifrost (SAF), approved proof</td></tr>
+          <tr><td class="t">03 Battle damage repair</td><td>Mission ready again.</td><td>Damaged part out. Printed part in.</td><td class="src flag">No case study yet</td></tr>
+          <tr><td class="t">04 Digitalization</td><td>Send the file. Print the part.</td><td>Digital inventory, at the point of need.</td><td class="src flag">No case study yet</td></tr>
+          <tr><td class="t">05 Airworthiness</td><td>Built to fly.</td><td>F900 microvanes: 1% less drag on the C-17.</td><td class="src">USAF C-17 microvanes use case</td></tr>
+          <tr><td class="t">Close</td><td>Talk to our experts. Right here.</td><td>Stratasys logo, then loops to the hook</td><td class="src">Brief</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ask" id="ask">
+    <h2>What we need from you</h2>
+    <ol>
+      <li>Your pick: A, B, C, or a mix.</li>
+      <li>A case study or approved line for 03 Battle damage repair and 04 Digitalization.</li>
+      <li>OK to name the US Army depot, the USAF C-17 and Bifrost on screen. All three come from approved Stratasys material.</li>
+      <li>For style B: OK to reuse Sierra Space footage at a defense event.</li>
+      <li>The screen model and size at the booth, and whether it plays MP4 from USB.</li>
+    </ol>
+  </section>
+</div>
+
+</body>
+</html>
